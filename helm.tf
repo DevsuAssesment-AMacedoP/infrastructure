@@ -39,7 +39,7 @@ resource "helm_release" "ingress-nginx" {
   version          = "9.2.27"
 
   set {
-    name = "publishService.enabled"
+    name  = "publishService.enabled"
     value = "true"
   }
 }
@@ -53,7 +53,7 @@ resource "helm_release" "cert-manager" {
   version          = "1.9.1"
 
   set {
-    name = "installCRDs"
+    name  = "installCRDs"
     value = "true"
   }
 }
