@@ -1,0 +1,11 @@
+provider: cloudflare
+sources:
+- ingress
+- service
+cloudflare:
+  apiToken: ${cloudflare_api_token}
+  proxied: false
+logLevel: ${log_level}
+domainFilters:
+- ${domain}
+txtOwnerId: external-dns
