@@ -10,6 +10,14 @@ terraform {
       version = ">=2.6.0"
     }
   }
+
+  cloud {
+    organization = "amacedo"
+
+    workspaces {
+      name = "infrastructure-devsu"
+    }
+  }
 }
 
 provider "azurerm" {
